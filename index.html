@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Title  -->
+        <title>Fokira Bank Private Limited</title>
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
+        <!-- Bootstrap CSS CDN -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+        <!-- Main Style -->
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+    <body>
+        <!-- Login Section -->
+        <section class="login-section py-5">
+            <h1 style="color: aqua;" class="display-4 mb-5 text-center"><marquee behavior="" direction="">wellcome adnan mim bank</marquee> </h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mx-auto">
+                        <div class="login-form p-5 rounded shadow">
+                            <h3 class="display-6 mb-4">Login</h3>
+                            <div class="mb-3">
+                                <label class="form-label" for="">Username</label>
+                                <input type="text" class="form-control" placeholder="enter your  Email" />
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="">Password</label>
+                                <input type="password" class="form-control" placeholder="enter your password " />
+                            </div>
+                            <button class="login-btn btn btn-success">Login</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="transaction-section py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <div class="deposit bg-primary text-white rounded p-4">
+                            <h5>Deposit 💳</h5>
+                            <h2>$ <span class="current-deposit">00</span></h2>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <div class="withdraw bg-danger text-white rounded p-4">
+                            <h5>Withdraw 🏧</h5>
+                            <h2>$ <span id="currentWithdraw" class="current-withdraw">00</span></h2>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <div class="balance bg-success text-white rounded p-4">
+                            <h5>Balance 🤑</h5>
+                            <h2>$ <span id="currentBalance" class="current-balance">500</span></h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center py-5">
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <div class="submit-area shadow p-3 rounded">
+                            <h4>Deposit</h4>
+                            <input type="number" class="deposit-amount form-control mb-3" placeholder="$ amount you want to deposit" />
+
+                            <button id="addDeposit" class="deposit-input btn btn-success">Deposit</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <div class="submit-area shadow p-3 rounded">
+                            <h4>Withdraw</h4>
+                            <input type="number" class="withdraw-amount form-control mb-3" placeholder="$ amount you want to withdraw" />
+
+                            <button id="addWithdraw" class="withdraw-input btn btn-success">Withdraw</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-between bg-light p-5 rounded">
+                    <div class="col-md-6 mb-4 mb-md-0 text-center text-md-start">
+                        <p class="warning-message mb-0">Transaction Status 🏦</p>
+                    </div>
+                    <div class="col-md-6 mb-4 mb-md-0 text-center text-md-end">
+                        <p class="text-success mb-0">Your balance is $ <span class="total-balance">500 😜</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center py-5">
+            <div class="container">
+                <p class="mb-0">Copyright &copy; 2021 | This template made with 😍 by <a href="https://adnan-mim.github.io/web-devloment/indesk.html" target="_blank">Mahi adnan mim</a></p>
+            </div>
+        </footer>
+
+        <!-- Bootstrap JS CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        <script src="assets/js/app.js"></script>
+    </body>
+</html>
